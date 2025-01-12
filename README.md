@@ -13,5 +13,5 @@
 `git add .` this command stages all the changes new, updated or deleted in the current directory or their subdirectories.
 
 
-To have a copy of this repository locally please use this command: `git clone https://github.com/ashishjain-repo/CSE310_Sprint_One.git`. This will create a copy for what we have in the main branch for you in your local machine. If you have authrorization to the repository as a contributor you will be able to push code in this repository.
+To have a copy of this repository locally please use the following command: ```git clone https://github.com/ashishjain-repo/CSE310_Sprint_One.git```. This will create a copy for what we have in the main branch for you in your local machine. If you have authrorization to the repository as a contributor you will be able to push code in this repository.
 
