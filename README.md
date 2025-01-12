@@ -19,3 +19,16 @@ git clone https://github.com/ashishjain-repo/CSE310_Sprint_One.git
 ```
 This will create a copy for what we have in the main branch for you in your local machine. If you have authrorization to the repository as a contributor you will be able to push code in this repository.
 
+
+
+# Inventory Management
+
+### Purpose
+To efficiently track and manage the stock and make updates to the items based on the availability.
+
+### About
+
+### Technologies Used
+1. Python
+2. SQL
+3. MySQL RDBMS
