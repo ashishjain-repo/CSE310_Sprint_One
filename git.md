@@ -1,5 +1,3 @@
-# CSE310_Sprint_One
-
 ## Git Clone
 `git clone https://myrepo.com/some-repo` this command is used to clone or create a copy of a repository which currently is a remote repository. This command is paired with the link where that git repository resides.
 
