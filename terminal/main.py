@@ -13,7 +13,9 @@ DATABASE = os.getenv("DATABASE");
 
 connection = Connect(HOST, USERNAME, PASSWORD, DATABASE)
 connect = connection.Connection()
-
+if not connect:
+    print("Cannot connect/find the database")
+    exit()
 USERID = 0
 
 WelcomeScreen(connect)

@@ -7,10 +7,12 @@ class Connect:
         self.Password = Password;
         self.Database = Database;
     def Connection(self):
-        DB_Connection = mysql.connector.connect(host = self.Host, user = self.User, password = self.Password, database =  self.Database);
-        if(DB_Connection.is_connected()):
-            return DB_Connection;
-        else: return False;
+        try:
+            DB_Connection = mysql.connector.connect(host = self.Host, user = self.User, password = self.Password, database =  self.Database);
+            if(DB_Connection.is_connected()):
+                return DB_Connection;
+        except:
+            return False
 
 def EnterQuery(connection, todo, query, param=()):
     if connection:

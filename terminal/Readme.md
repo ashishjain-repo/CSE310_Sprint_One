@@ -11,4 +11,9 @@ USER='yourrootuser'
 PASSWORD='mypassword'
 DATABASE='inventory' # Do not change
 ```
-After you have set this up
+After you have set this up simply install the following packages using PIP:
+```
+pip install mysql-connector-python
+pip install python-dotenv
+```
+Now since everything is setup make sure you have the database in your system, because this whole application runs only if the database exist.
