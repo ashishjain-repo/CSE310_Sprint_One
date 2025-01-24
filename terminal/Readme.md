@@ -1,6 +1,9 @@
 # main.py
+This serves as the entry point for our program, where we combine all of the features we have developed into a single file. By including these functions in the main file, it is simple to implement the features, which will operate sequentially.
 # data.py
+This file is a critical component of the software since it contains a class that initiates a connection to the MySQL database and produces an error if the connection cannot be established. This file also contains functions that are developed based on CRUD operations and can be implemented without having to manually connect to each database. This class handles all connections and can handle queries that need to be added manually. 
 # utils.py
+
 # login.py
 
 ## How to run
