@@ -4,12 +4,12 @@ from data import Connect
 
 from utils import WelcomeScreen, LoginScreen, UserInventory
 
-load_dotenv();
+load_dotenv()
 # Retrieve database credentials from environment variables
-HOST = os.getenv("HOST");
-USERNAME = os.getenv("USER");
-PASSWORD = os.getenv("PASSWORD");
-DATABASE = os.getenv("DATABASE");
+HOST = os.getenv("HOST")
+USERNAME = os.getenv("USER")
+PASSWORD = os.getenv("PASSWORD")
+DATABASE = os.getenv("DATABASE")
 
 # Creats database connection using Connect class
 connection = Connect(HOST, USERNAME, PASSWORD, DATABASE)
