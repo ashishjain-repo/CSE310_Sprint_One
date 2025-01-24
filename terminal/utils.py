@@ -76,8 +76,8 @@ def UserInventory(connect, USERID):
                 itemQuantity = input('Please Enter the Quantity: ')
                 itemPrice = float(input('Please Enter the Price: '))
                 while True:
-                    itemWeight = int(input('Is item price according to weight (0 = False, 1 = True):'));
-                    itemPerItem = int(input('Is item price according to per item (0 = False, 1 = True):'));
+                    itemWeight = int(input('Is item price according to weight (0 = False, 1 = True): '));
+                    itemPerItem = int(input('Is item price according to per item (0 = False, 1 = True): '));
                     if (itemWeight == 0 and itemPerItem == 0) or (itemWeight == 1 and itemPerItem == 1):
                         print('Item must be either priced based on Per Item or Weight')
                         continue;
