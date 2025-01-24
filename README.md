@@ -14,7 +14,7 @@
 
 We are using MySQL Server for our RDBMS
 
-{Describe the structure (tables) of the relational database that you created.}
+We have created three tables in our database which are: `User`, `Item`, and `Category`. So one user can have more than one items and that items is belong to one of the categories.
 
 # Development Environment
 We primarily used Git version control, MySQL Server, MySQL Workbench, and Visual Studio Code.
@@ -26,7 +26,7 @@ The primary programming language that has been used in the project is Python and
 {Make a list of websites that you found helpful in this project}
 
 - [MySQL Documentation](https://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html)
-- [Web Site Name](http://url.link.goes.here)
+- [Python Documentation](https://docs.python.org/3/tutorial/classes.html)
 
 # Future Work
 - Needs to add Update function to update the item quantity
