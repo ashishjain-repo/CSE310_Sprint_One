@@ -63,7 +63,7 @@ def UserInventory(connect, USERID):
         prompt = input('Please Enter The Number of the Task: ');
         match int(prompt):
             case 1:
-                result = EnterQuery(connect, 'readall', 'SELECT I.Name, I.ItemId, I.Price, I.Quantity, I.IsWeight, I.IsPerItem, C.Name FROM item I INNER JOIN category C ON I.CategoryId = C.Id  WHERE I.UserId = %s', (USERID,))
+                result = EnterQuery(connect, 'readall', "SELECT I.Name, I.ItemId, I.Price, I.Quantity, CASE WHEN I.IsWeight > 0 THEN 'Yes' ELSE 'No' END AS Weight, CASE WHEN I.IsPerItem > 0 THEN 'Yes' ELSE 'No' END AS PerItem, C.Name FROM item I INNER JOIN category C ON I.CategoryId = C.Id  WHERE I.UserId = %s", (USERID,))
                 print(tabulate([i for i in result] , headers=['Item Name', 'Item Id', 'Cost', 'Total Quantity','Per Lbs','Per Item', 'Category']),'\n')
             case 2:
                 itemName = input('Please Enter the Item Name: ')
