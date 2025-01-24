@@ -48,7 +48,7 @@ def LoginScreen(connect):
         while True:
             password = input('Enter Password: ')
             result = EnterQuery(connect, 'readone', 'SELECT Password FROM user WHERE Username = %s', (username,));
-            if(result != None and (result[0] == password or hash_password(password))):
+            if(result != None and (result[0] == password or result[0] == hash_password(password))):
                 break;
             else: 
                 print("Password does not match")
