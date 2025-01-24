@@ -1,6 +1,7 @@
 from data import EnterQuery
 from tabulate import tabulate
 from login import hash_password, Validate_password
+from pwinput import pwinput
 def WelcomeScreen(connect):
     while True:
         print("Welcome to Inventory Management System: ");
@@ -18,13 +19,13 @@ def WelcomeScreen(connect):
                     break
             while True:
                 while True:
-                    Password = input("Please enter a new password: ");
+                    Password = pwinput(prompt="Please enter a new password: ",mask="*");
                     passChecking = Validate_password(Password)
                     if passChecking:
                         break;
                     else:
                         continue
-                PasswordRe = input("Please retype your password: ");
+                PasswordRe = pwinput(prompt="Please retype your password: ",mask="*");
                 if(Password == PasswordRe):
                     break
                 else:
@@ -46,7 +47,7 @@ def LoginScreen(connect):
                 print("Username does not exist")
                 continue
         while True:
-            password = input('Enter Password: ')
+            password = pwinput(prompt='Enter Password: ',mask="*")
             result = EnterQuery(connect, 'readone', 'SELECT Password FROM user WHERE Username = %s', (username,));
             if(result != None and (result[0] == password or result[0] == hash_password(password))):
                 break;
