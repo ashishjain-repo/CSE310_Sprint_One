@@ -1,11 +1,33 @@
-# Inventory Management
+# Overview
 
-### Purpose
-To efficiently track and manage the stock and make updates to the items based on the availability.
+{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
 
-### About
+{Provide a description of the software that you wrote and how it integrates with a SQL Relational Database. Describe how to use your program.}
 
-### Technologies Used
-1. Python
-2. SQL
-3. MySQL RDBMS
+{Describe your purpose for writing this software.}
+
+{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of how created the Relational Database.}
+
+[Software Demo Video](http://youtube.link.goes.here)
+
+# Relational Database
+
+We are using MySQL Server for our RDBMS
+
+{Describe the structure (tables) of the relational database that you created.}
+
+# Development Environment
+We primarily used Git version control, MySQL Server, MySQL Workbench, and Visual Studio Code.
+
+The primary programming language that has been used in the project is Python and SQL. We also added additional packages like `python-dotenv`, `mysql-connector-python`, `tabulate`, `pwinput`.
+
+# Useful Websites
+
+{Make a list of websites that you found helpful in this project}
+
+- [MySQL Documentation](https://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html)
+- [Web Site Name](http://url.link.goes.here)
+
+# Future Work
+- Needs to add Update function to update the item quantity
+- Graphical User Interface
