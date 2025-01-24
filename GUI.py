@@ -1,13 +1,6 @@
 import tkinter as tk
 from tkinter import *
 
-root = Tk()
-
-myLabel = Label(root, text="Hello World")
-myLabel.pack()
-
-root.mainloop()import tkinter as tk
-
 class LoginScreen:
     def __init__(self, root):
         self.root = root
