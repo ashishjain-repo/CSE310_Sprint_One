@@ -70,8 +70,14 @@ def UserInventory(connect, USERID):
                 itemId = input('Please Enter the Item Id: ');
                 itemQuantity = input('Please Enter the Quantity: ')
                 itemPrice = float(input('Please Enter the Price: '))
-                itemWeight = int(input('Is item price according to weight (0 = False, 1 = True):'));
-                itemPerItem = int(input('Is item price according to per item (0 = False, 1 = True):'));
+                while True:
+                    itemWeight = int(input('Is item price according to weight (0 = False, 1 = True):'));
+                    itemPerItem = int(input('Is item price according to per item (0 = False, 1 = True):'));
+                    if (itemWeight == 0 and itemPerItem == 0) or (itemWeight == 1 and itemPerItem == 1):
+                        print('Item must be either priced based on Per Item or Weight')
+                        continue;
+                    else:
+                        break
                 categories = EnterQuery(connect, 'readall', 'SELECT Id, Name FROM category');
                 for category in categories:
                     print(f'{category[0]}.  {category[1]}')
