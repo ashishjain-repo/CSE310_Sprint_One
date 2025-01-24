@@ -158,4 +158,7 @@ pip install python-dotenv
 pip install tabulate
 pip install pwinput
 ```
+or run this command:-
+`pip install -r requirements.txt`
+
 Now since everything is setup make sure you have the database in your system, because this whole application runs only if the database exist.
