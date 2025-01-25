@@ -161,4 +161,4 @@ pip install pwinput
 or run this command:-
 `pip install -r requirements.txt`
 
-Now since everything is setup make sure you have the database in your system, because this whole application runs only if the database exist.
+Now since everything is setup make sure you have the database in your system, because this whole application runs only if the database exist. To have the database in your database you can use the script `inventory.sql` and that should create a database for you. To run the program use this command: `python main.py`
